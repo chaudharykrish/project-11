@@ -37,6 +37,14 @@ function setup(){
 function draw() {
   background(0);
 
+  if(keyDown("Left_arrow")) {
+    runner.velocityX = -1;
+  }
+
+  if(keyDown("Ridht_arrow")) {
+    runner.velocityX = 1;
+  }
+
 
   drawSprites();
 
